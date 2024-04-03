@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multi website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<style>
+    .hello {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        /* position: fixed; */
+        width: 100%;
+        color: white;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    header a {
+        margin-right: 60px;
+        padding-left: 30px;
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    header :hover {
+        color: orangered;
+    }
+
+    .background {
+        background-color: rgb(29, 28, 28);
+        width: 100%;
+        height: 100px;
+        /* position: fixed; */
+    }
+
+    .coffe {
+        background-image: url(images/home1.jpg);
+        width: 100%;
+        height: 800px;
+        background-size: cover;
+        color: white;
+        margin-top: -20px;
+    }
+
+    .shope {
+        padding: 100px;
+        font-size: 25px;
+    }
+
+    .shope a {
+        text-decoration: none;
+        /* border-radius: 10px; */
+        color: white;
+        font-size: 20px;
+    }
+
+    .shope button :hover {
+        background-color: orangered;
+    }
+
+    .secondimg {
+        background-color: rgb(255, 254, 254);
+        background-size: cover;
+        height: 1000px;
+        margin-top: 40px;
+    }
+
+    .full {
+        padding: 100px;
+        font-size: 20px;
+
+    }
+
+    .full a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .about {
+        color: orangered;
+    }
+
+    .images img {
+        width: 500px;
+        height: 500px;
+        margin-left: 900px;
+        margin-top: -500px;
+    }
+
+    .gallery {
+        color: orangered;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .content {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .one {
+        padding-left: 150px;
+    }
+
+    .two {
+        padding-left: 130px;
+    }
+
+    .three {
+        padding-left: 130px;
+    }
+
+    .three a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .four {
+        background-image: url(images/coffe11.jpg);
+        width: 100%;
+        height: 800px;
+        /* position: fixed; */
+        margin-top: 1300px;
+        background-size: contain;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        padding-top: 40px;
+    }
+
+    .four h2 {
+        padding-top: 50px;
+    }
+
+    .boxes {
+        background-color: orangered;
+        height: 350px;
+        width: 400px;
+        font-size: 20px;
+        margin-left: 100px;
+        margin-top: 80px;
+
+    }
+
+    .boxes:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .boxes:hover .read {
+        display: inline;
+    }
+
+    .icons {
+        display: flex;
+
+    }
+
+    .read {
+        background-color: black;
+        width: 200px;
+        height: 40px;
+        display: none;
+    }
+
+    .read a {
+        text-decoration: none;
+        color: white;
+
+    }
+
+    .five {
+        padding-left: 180px;
+        margin-top: 50px;
+        font-size: 25px;
+    }
+
+    .six {
+        padding-left: 180px;
+        font-size: 25px;
+    }
+
+    .contact {
+        text-align: center;
+        color: orangered;
+        font-size: 30px;
+        font-size: bold;
+        margin-top: 50px;
+    }
+
+    .seven {
+        text-align: center;
+        height: 500px;
+        width: 50%;
+        padding-top: 100px;
+        background-color: rgb(26, 24, 24);
+    }
+
+    .seven a {
+        font-size: 30px;
+        text-decoration: none;
+        color: white;
+        /* text-align: center; */
+        width: 100px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 70px;
+        margin-top: 10px;
+    }
+</style>
+
+
+<body>
+    <div class="background">
+        <header>
+            <h1>GrandCoffe</h1>
+            <div class="hello">
+                <div><a href="">Home</a></div>
+                <div><a href="full.html">About Us</a></div>
+                <div><a href="content.html">Gallery</a></div>
+                <div><a href="four.html">Service</a></div>
+                <div><a href="contact.html">Contact us</a></div>
+
+            </div>
+    </div>
+    </header>
+    <div class="coffe">
+        <div class="shope">
+            <h1 style="color: rgb(8, 8, 8); font-size: 60px;">Outstanding</h1>
+            <br>
+            <h1 style="font-size: 50px;">Coffee Shope</h1>
+            <p>There are many variations of passages of learn ipsum available but,</p>
+            <p>the majority have suffered alteration in some form, bye injucted</p>
+            <p>humour,</p>
+            <button style="height: 50px; width: 130px; background-color: rgb(19, 18, 18);"><a href="">Learn
+                    more</a></button>
+        </div>
+    </div>
+
+    <div class="secondimg">
+        <div class="full">
+            <div class="about">
+                <h2>ABOUT US</h2>
+            </div>
+            <p>Full cleaning and housekeaping services for companies and</p>
+            <p>householdes</p>
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting</p>
+            <p>industry.Lourem ipsum has been industry's standard dummy</p>
+            <p>text.Lorem ipsum is simply</p>
+            <button style="height: 50px; width: 130px; background-color: rgb(20, 20, 20);"><a href="">Read
+                    More</a></button>
+        </div>
+
+        <div class="images">
+            <img src="images/coffe1.jpg">
+        </div>
+        <br>
+        <div class="content">
+            <div class="gallery">
+                <h1>Our Gallery</h1>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of printing typesetting ststry lorem Ipsum the industry'ndard dummy text
+                ever since of the 1500s, when an</p>
+            <p>unknown printer took a galley of type and scra make a type specimen book.It has</p>
+        </div>
+
+        <div class="one">
+            <img src="images/coffe2.jpg" style="margin-left: 40px;">
+            <img src="images/coffe3.jpg" style="margin-left: 40px;">
+            <img src="images/coffe4.jpg" style="margin-left: 40px;">
+        </div>
+
+        <div class="two">
+            <img src="images/coffe5.jpg" style="width: 400px; height: 400px; margin-left: 60px; margin-top: 30px;">
+            <img src="images/coffe6.jpg" style="width: 400px; height: 400px; margin-left: 40px;">
+            <img src="images/coffe7.jpg" style="width: 400px; height: 400px; margin-left: 40px;">
+        </div>
+
+        <div class="three">
+            <img src="images/coffe8.jpg" style="width: 400px; height: 400px; margin-left: 60px; margin-top: 20px;">
+            <img src="images/coffe9.jpg" style="width: 400px; height: 400px; margin-left: 40px;">
+            <img src="images/coffe1.jpg" style="width: 400px; height: 400px; margin-left: 40px;">
+            <br><br>
+            <button style="margin-left: 600px; height: 50px; width: 130px; background-color: rgb(32, 31, 31);"><a
+                    href="">See More</a></button>
+        </div>
+    </div>
+
+    <div class="four">
+        <h1 style="font-size: bold;">Services</h1>
+        <p>Typesetting industry lorem ipsum is simply dummy text of the</p>
+
+        <div class="icons">
+            <div class="boxes">
+                <img src="images/icon1.png" height="60px" style="padding-top: 30px;">
+                <h2>Orginal Coffes</h2>
+                <p>Exeric tation ullamcorper suscipit lobortis</p>
+                <p>nisl ut aliquip ex ea</p>
+                <button class="read"><a href="#">Read More</a></button>
+            </div>
+            <div class="boxes">
+                <img src="images/icon2.png" height="60px" style="padding-top: 20px;">
+                <h2>20 Coffes Flavors</h2>
+                <p>Exeric tation ullamcorper suscipit lobortis</p>
+                <p>nisl ut aliquip ex ea</p>
+                <button class="read"><a href="#">Read More</a></button>
+            </div>
+            <div class="boxes">
+                <img src="images/icon3.png" height="60px" style="padding-top: 20px;">
+                <h2>Pleasant Abient</h2>
+                <p>Exeric tation ullamcorper suscipit lobortis</p>
+                <p>nisl ut aliquip ex ea</p>
+                <button class="read"><a href="#">Read More</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="five">
+            <h1 style="color: orangered;">Testimonial</h1>
+            <p>Eeven slightly believable. If you are going to use a passage of Lorem Ipsum, you need to</p>
+        </div>
+        <br><br>
+        <div class="six">
+            <h1 style="color: orangered;">MONILA "</h1>
+            <p>Many Variations of passages of lorem ipsum available,but the majority have sufferd alternation in
+                someform,injected</p>
+            <p>humor, or randomised words Which dont't look even slightly believable. If you are going to use a passage
+                of Lorem ipsum, you</p>
+            <p>need to be sure there isn't anything embarrassing hidden in the middle of text. All the many variations
+                of passages of Lorem ipsum</p>
+            <p>available,but the majority have suffered alteration in some embarrassing hidden in the middle of
+                text.All the</p>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="contact">
+        <h1>Contact Us</h1>
+    </div>
+    <br><br>
+
+    <div style="display: flex;">
+        <div class="seven">
+            <input type="text" placeholder="Name" style="width: 500px; height: 50px; border-radius: 30px;">
+            <br><br>
+            <input type="email" placeholder="Email" style="width: 500px; height: 50px; border-radius: 30px;">
+            <br><br>
+            <input type="number" placeholder="Phone number" style="width: 500px; height: 50px; border-radius: 30px;">
+            <br><br>
+            <input type="text" placeholder="Message" style="width: 500px; height: 80px; border-radius: 30px;">
+            <br><br>
+            <button style="background-color: orangered; width: 150px; border-radius: 30px;"><a href="">Send</a></button>
+        </div>
+
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.57031852096!2d78.44029117492029!3d17.432396401507365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90ce69555555%3A0xe878f5d4343c5822!2sLUR%20IT%20BUSINESS%20SOLUTIONS%20(OPC)%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1711443495600!5m2!1sen!2sin"
+                width="800px" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <h3>About</h3>
+            <p>consectetur adipiscing elit, sed do</p>
+            <p>eiusmod tempor incididunt ut labore</p>
+            <p>et dolore magna aliqua. Ut enim ad</p>
+            <p>minim veniam, quis nostrud</p>
+            <p>exercitation u</p>
+        </div>
+
+        <div>
+            <h3>Menu</h3>
+            <p>Home</p>
+            <p>About us</p>
+            <p>Services</p>
+            <p>Contact us</p>
+        </div>
+
+        <div>
+            <h3>Usefull links</h3>
+            <p>Adipiscing</p>
+            <p>Elit,sed to</p>
+            <p>Eisumod</p>
+            <p>Tempor</p>
+            <p>incididunt</p>
+        </div>
+
+        <div>
+            <h3>Contact us</h3>
+            <p>Address:Loram ipsum</p>
+            <p>Call:+011234567890</p>
+            <p>Email:demo@gmail.com</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
